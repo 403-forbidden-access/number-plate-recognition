@@ -86,7 +86,7 @@ else
     message = sprintf("Your vehicle with plate %s has exited the parking lot.\nYour parking fee is ₹%d. Please proceed with the payment.", noPlate, parkingFee);
 
     % ---- TELEGRAM MESSAGE SEND ----
-    token = '7922603331:AAFJJ35xHD0dHkSbazAjua9Z_62veijNF_0'; % Your bot token
+    token = ''; % Your bot token
     url = sprintf('https://api.telegram.org/bot%s/sendMessage', token);
     data = struct('chat_id', chat_id, 'text', message);
 
